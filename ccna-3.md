@@ -44,3 +44,9 @@ spanning-tree vlan 1,10,20 root primary
 spanning-tree portfast
 spanning-tree bpduguard enable
 ```
+
+### Verificatie
+```
+show cdp neighbors
+show spanning-tree vlan
+```
