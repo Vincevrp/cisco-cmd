@@ -140,3 +140,51 @@ ipv6 ospf area
 ```
 clear ipv6 ospf process
 ```
+
+## EIGRP
+
+```
+router eigrp 1
+eigrp router-id
+network network-addr wildcardmask
+```
+
+### Configure passive interfaces
+
+```
+router eigrp 1
+passive-interface gigabitethernet 0/0
+```
+
+### Verificatie
+
+```
+show ip protocols
+show ip eigrp neighbors
+show ip eigrp topology
+show running-config | section eigrp 1
+```
+
+## EIGRPv6
+
+```
+ipv6 unicast-routing
+ipv6 router eigrp 2
+eigrp router-id 2.0.0.0
+no shutdown
+```
+
+### Configure passive interfaces
+
+```
+ipv6 router eigrp 2
+passive-interface gigabitethernet 0/0
+```
+
+### Verificatie
+
+```
+show ipv6 protocols
+show ipv6 eigrp neighbors
+show ipv6 route
+```
