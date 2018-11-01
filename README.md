@@ -1,8 +1,3 @@
 # Cisco IOS cheatsheets (Dutch)
 
-Personal Cisco IOS command cheatsheets.
-
-Cisco Routing & Switching:
-
-* [Routing and Switching Essentials](./ccna-2.md)
-* [Scaling Networks](./ccna-3.md)
+This repository has been moved to [my cheat-sheets](https://github.com/Vincevrp/cheat-sheets).
